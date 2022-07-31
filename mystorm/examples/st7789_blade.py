@@ -10,8 +10,7 @@ oled = {"1":("oled_bl","o"),
         "3":("oled_csn","o"),
         "4":("oled_clk","o"),
         "5":("oled_dc","o"),
-        "6":("oled_mosi","o")
-        }
+        "6":("oled_mosi","o")}
 
 
 class ST7789Test(Elaboratable):

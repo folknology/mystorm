@@ -7,7 +7,7 @@ from mystorm.tiles.seven_seg_tile import Pins
 from mystorm.core.pll import PLL
 
 from mystorm.core.qspimem import QspiMem
-from mystorm.examples.sevensegtile import SevenSegmentTile
+from mystorm.tiles.seven_seg_tile import SevenSegmentTile
 
 BLADE = 1
 TILE = 3
@@ -86,7 +86,6 @@ class Qbus7Seg(Elaboratable):
 
 def synth():
     platform = IceLogicBusPlatform()
-    # platform.add_resources(tile_resources(TILE))
     platform.add_tile(segtile, TILE, Pins)
     platform.add_blade(leds, BLADE, {"1":("sig","o")})
     platform.build(Qbus7Seg(), nextpnr_opts="--timing-allow-fail", do_program=True)
