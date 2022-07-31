@@ -149,6 +149,47 @@ class IceLogicBusPlatform(LatticeICE40Platform):
         Connector("pmod", 5, PMOD6A + PMOD6B),  # PMOD11/12
     ]
 
+    def add_blade(self, name, blade, pins):
+        if len(pins) > 1:
+            signals = [
+            Subsignal(signal,
+                    Pins(pin, invert=False, dir=dir, conn=("blade", blade)),
+                    Attrs(IO_STANDARD="SB_LVCMOS")
+                    ) for pin,(signal,dir) in pins.items()
+            ]
+            resources = [Resource(name, 0, *signals)]
+        else :
+            (_pin, (signal,dir)) = pins.popitem()
+            resources =  [Resource(name, 0,
+                Subsignal(signal,
+                          Pins("1 2 3 4 5 6", dir=dir, conn=("blade", blade)),
+                          Attrs(IO_STANDARD="SB_LVCMOS")
+                          )
+            )]
+
+        self.add_resources(resources)
+
+    def add_tile(self, name, tile, pins):
+        if len(pins) > 1:
+            signals = [
+            Subsignal(signal,
+                    Pins(pin, invert=False, dir=dir, conn=("tile", tile)),
+                    Attrs(IO_STANDARD="SB_LVCMOS")
+                    ) for pin,(signal,dir) in pins.items()
+            ]
+            resources = [Resource(name, 0, *signals)]
+        else :
+            (_pin, (signal,dir)) = pins.popitem()
+            resources =  [Resource(name, 0,
+                Subsignal(signal,
+                          Pins("1 2 3 4 5 6 7 8 9 10 11 12", dir=dir, conn=("tile", tile)),
+                          Attrs(IO_STANDARD="SB_LVCMOS")
+                          )
+            )]
+
+        self.add_resources(resources)
+        
+
     def get_port(self):
         for p in lp.comports():
             if p.vid == 5824:

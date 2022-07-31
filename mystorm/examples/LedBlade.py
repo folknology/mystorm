@@ -4,21 +4,13 @@ from amaranth.build import *
 from mystorm.boards.icelogicbus import *
 
 BLADE = 1
-
-led_blade = [
-    Resource("leds6", 0,
-                Subsignal("leds",
-                          Pins("1 2 3 4 5 6", dir="o", conn=("blade", BLADE)),
-                          Attrs(IO_STANDARD="SB_LVCMOS")
-                          )
-             )
-]
+leds = "leds6"
 
 class LedBlade(Elaboratable):
 
     def elaborate(self, platform):
         leds6 = Signal(6, reset = 0b1111)
-        leds6 = Cat([l for l in platform.request("leds6")])
+        leds6 = Cat([l for l in platform.request(leds)])
         timer = Signal(23)
 
         m = Module()
@@ -30,7 +22,8 @@ class LedBlade(Elaboratable):
 
 def synth():
     platform = IceLogicBusPlatform()
-    platform.add_resources(led_blade)
+    # platform.add_resources(blade("leds6", BLADE, "o"))
+    platform.add_blade(leds, BLADE, {1:("sig","o")})
     platform.build(LedBlade(), do_program=True)
 
 if __name__ == "__main__":
