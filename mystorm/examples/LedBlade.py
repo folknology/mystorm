@@ -22,8 +22,7 @@ class LedBlade(Elaboratable):
 
 def synth():
     platform = IceLogicBusPlatform()
-    # platform.add_resources(blade("leds6", BLADE, "o"))
-    platform.add_blade(leds, BLADE, {1:("sig","o")})
+    platform.add_blade(leds, BLADE, {"1":("sig","o")})
     platform.build(LedBlade(), do_program=True)
 
 if __name__ == "__main__":
