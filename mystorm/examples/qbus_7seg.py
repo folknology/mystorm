@@ -86,7 +86,7 @@ class Qbus7Seg(Elaboratable):
 
 def synth():
     platform = IceLogicBusPlatform()
-    platform.add_tile(segtile, TILE, Pins)
+    platform.add_tile(segtile, TILE, Pins, invert=True)
     platform.add_blade(leds, BLADE, {"1":("sig","o")})
     platform.build(Qbus7Seg(), nextpnr_opts="--timing-allow-fail", do_program=True)
     # Send bus command
