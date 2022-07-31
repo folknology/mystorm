@@ -148,11 +148,11 @@ class IceLogicBusPlatform(LatticeICE40Platform):
         Connector("pmod", 5, PMOD6A + PMOD6B),  # PMOD11/12
     ]
 
-    def add_blade(self, name, blade, pins):
+    def add_blade(self, name, blade, pins, invert=False):
         if len(pins) > 1:
             signals = [
             Subsignal(signal,
-                    Pins(pin, invert=False, dir=dir, conn=("blade", blade)),
+                    Pins(pin, dir=dir, conn=("blade", blade), invert=invert),
                     Attrs(IO_STANDARD="SB_LVCMOS")
                     ) for pin,(signal,dir) in pins.items()
             ]
@@ -161,18 +161,18 @@ class IceLogicBusPlatform(LatticeICE40Platform):
             (_pin, (signal,dir)) = pins.popitem()
             resources =  [Resource(name, 0,
                 Subsignal(signal,
-                          Pins("1 2 3 4 5 6", dir=dir, conn=("blade", blade)),
+                          Pins("1 2 3 4 5 6", dir=dir, conn=("blade", blade), invert=invert),
                           Attrs(IO_STANDARD="SB_LVCMOS")
                           )
             )]
 
         self.add_resources(resources)
 
-    def add_tile(self, name, tile, pins):
+    def add_tile(self, name, tile, pins, invert=False):
         if len(pins) > 1:
             signals = [
             Subsignal(signal,
-                    Pins(pin, invert=False, dir=dir, conn=("tile", tile)),
+                    Pins(pin, dir=dir, conn=("tile", tile), invert=invert),
                     Attrs(IO_STANDARD="SB_LVCMOS")
                     ) for pin,(signal,dir) in pins.items()
             ]
@@ -181,7 +181,7 @@ class IceLogicBusPlatform(LatticeICE40Platform):
             (_pin, (signal,dir)) = pins.popitem()
             resources =  [Resource(name, 0,
                 Subsignal(signal,
-                          Pins("1 2 3 4 5 6 7 8 9 10 11 12", dir=dir, conn=("tile", tile)),
+                          Pins("1 2 3 4 5 6 7 8 9 10 11 12", dir=dir, conn=("tile", tile), invert=invert),
                           Attrs(IO_STANDARD="SB_LVCMOS")
                           )
             )]

@@ -31,7 +31,7 @@ class SevenSegExample(Elaboratable):
 
 def synth():
     platform = IceLogicBusPlatform()
-    platform.add_tile(segtile, TILE, Pins)
+    platform.add_tile(segtile, TILE, Pins, invert=True)
     platform.build(SevenSegExample(), do_program=True)
 
 if __name__ == "__main__":
