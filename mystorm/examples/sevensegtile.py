@@ -1,6 +1,6 @@
 from amaranth import *
 
-from mystorm.tiles.seven_seg_tile import SevenSegDecoder, tile_resources
+from mystorm.tiles.seven_seg_tile import SevenSegDecoder
 
 
 class SevenSegmentTile(Elaboratable):

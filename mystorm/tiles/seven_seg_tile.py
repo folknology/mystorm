@@ -3,18 +3,15 @@ from typing import List
 from amaranth import *
 from amaranth.build import *
 
-PINMAP = {"a": "6", "b": "8", "c": "12", "d": "10", "e": "7", "f": "5", "g": "4", "dp": "9", "ca": "3 2 1"}
-
-
-def tile_resources(tile: int) -> List:
-    signals = [
-        Subsignal(signal,
-                  Pins(pin, invert=True, dir="o", conn=("tile", tile)),
-                  Attrs(IO_STANDARD="SB_LVCMOS")
-                  ) for signal, pin in PINMAP.items()
-    ]
-
-    return [Resource("seven_seg_tile", 0, *signals)]
+Pins = {"3 2 1":("ca","o"),
+        "4":("g","o"),
+        "5":("f","o"),
+        "6":("a","o"),
+        "7":("e","o"),
+        "8":("b","o"),
+        "9":("dp","o"),
+        "10":("d","o"),
+        "12":("c","o")}
 
 
 class SevenSegDecoder(Elaboratable):
