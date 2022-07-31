@@ -17,7 +17,6 @@ class PortNotFound(Exception):
 # Pinout definitions
 INT =" J11" #also ILB Blue LED pin
 RX = " K7"
-RX = " K7"
 TX = " L7"
 SPI = " K9 J9 L10 L7" #si,so, sck,ss
 

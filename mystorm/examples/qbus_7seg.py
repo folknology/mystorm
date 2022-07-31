@@ -4,20 +4,15 @@ from amaranth.build import *
 from mystorm.boards.icelogicbus import *
 
 from mystorm.tiles.seven_seg_tile import tile_resources
-from mystorm.misc.pll import PLL
+from mystorm.core.pll import PLL
 
-from mystorm.misc.qspimem import QspiMem
+from mystorm.core.qspimem import QspiMem
 from mystorm.examples.sevensegtile import SevenSegmentTile
 
 BLADE = 1
 TILE = 3
 PMOD = 5
-
-led_blade = [
-    Resource("leds6", 0,
-             Subsignal("leds", Pins("1 2 3 4 5 6", dir="o", invert=True, conn=("blade", BLADE))),
-             Attrs(IO_STANDARD="SB_LVCMOS"))
-]
+leds = "leds6"
 
 
 class Qbus7Seg(Elaboratable):
@@ -92,7 +87,7 @@ class Qbus7Seg(Elaboratable):
 def synth():
     platform = IceLogicBusPlatform()
     platform.add_resources(tile_resources(TILE))
-    platform.add_resources(led_blade)
+    platform.add_blade(leds, BLADE, {"1":("sig","o")})
     platform.build(Qbus7Seg(), nextpnr_opts="--timing-allow-fail", do_program=True)
     # Send bus command
     addr = 0
