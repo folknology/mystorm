@@ -1,21 +1,17 @@
 from amaranth import *
 from amaranth.build import *
-from mystorm_boards.icelogicbus import *
-
-from st7789 import *
+from mystorm.boards.icelogicbus import *
+from mystorm.core.st7789 import *
 
 BLADE = 3
 
-scard_blade = [
-    Resource("oled", 0,
-             Subsignal("oled_bl",   Pins("1", dir="o", conn=("blade", BLADE))),
-             Subsignal("oled_resn",   Pins("2", dir="o", conn=("blade", BLADE))),
-             Subsignal("oled_csn",   Pins("3", dir="o", conn=("blade", BLADE))),
-             Subsignal("oled_clk", Pins("4", dir="o", conn=("blade", BLADE))),
-             Subsignal("oled_dc", Pins("5", dir="o", conn=("blade", BLADE))),
-             Subsignal("oled_mosi", Pins("6", dir="o", conn=("blade", BLADE))),
-             Attrs(IO_STANDARD="SB_LVCMOS"))
-]
+oled = {"1":("oled_bl","o"),
+        "2":("oled_resn","o"),
+        "3":("oled_csn","o"),
+        "4":("oled_clk","o"),
+        "5":("oled_dc","o"),
+        "6":("oled_mosi","o")
+        }
 
 
 class ST7789Test(Elaboratable):
@@ -64,6 +60,5 @@ class ST7789Test(Elaboratable):
 
 if __name__ == "__main__":
     platform = IceLogicBusPlatform()
-    platform.add_resources(scard_blade)
-
+    platform.add_blade("oled",BLADE,oled)
     platform.build(ST7789Test(), do_program=True)
