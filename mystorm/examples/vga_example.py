@@ -1,16 +1,16 @@
 from amaranth import *
 
-from mystorm_boards.icelogicbus import *
-from HDL.Tiles.AAVC_tile import tile_resources
-from HDL.Misc.vga import VGADriver, VGATestPattern, VGATiming, vga_timings
-from HDL.Misc.pll import PLL
-from HDL.Tiles.audio import SquareWave
+from mystorm.boards.icelogicbus import *
+from ..tiles.vga_tile import Pins
+from ..core.vga import VGADriver, VGATestPattern, VGATiming, vga_timings
+from ..core.pll import PLL
 
 
 TILE = 1
+vga_tile = "vga_tile"
 
 
-class AVExample(Elaboratable):
+class VGAExample(Elaboratable):
     def __init__(self,
                  timing: VGATiming,  # VGATiming class
                  xadjustf=0,  # adjust -3..3 if no picture
@@ -44,10 +44,8 @@ class AVExample(Elaboratable):
         m.submodules.pattern = pattern = VGATestPattern(vga)
         # enable the clock and test signal
         m.d.comb += vga.i_clk_en.eq(1)
-        # Audio waveform generator
-        m.submodules.sqw = sqw = SquareWave()
         # Grab our VGA Tile resource
-        av_tile = platform.request("av_tile")
+        av_tile = platform.request(vga_tile)
         # Hook it up to the VGA instance
         m.d.comb += [
             av_tile.red.eq(vga.o_vga_r[5:]),
@@ -55,19 +53,18 @@ class AVExample(Elaboratable):
             av_tile.blue.eq(vga.o_vga_b[5:]),
             av_tile.hs.eq(vga.o_vga_hsync),
             av_tile.vs.eq(vga.o_vga_vsync)
-            # av_tile.left.eq(sqw.left),
-            # av_tile.right.eq(sqw.right)
         ]
 
         return m
 
+
 def synth():
     platform = IceLogicBusPlatform()
-    platform.add_resources(tile_resources(TILE))
-    platform.build(AVExample(timing=vga_timings['1024x768@60Hz']), do_program=True)
+    platform.add_tile(vga_tile, TILE, Pins)
+    platform.build(VGAExample(timing=vga_timings['1024x768@60Hz']), do_program=True)
+
 
 
 if __name__ == "__main__":
-    platform = IceLogicBusPlatform()
-    platform.add_resources(tile_resources(TILE))
-    platform.build(AVExample(timing=vga_timings['1024x768@60Hz']), do_program=True)
+    synth()
+
