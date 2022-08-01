@@ -187,6 +187,26 @@ class IceLogicBusPlatform(LatticeICE40Platform):
             )]
 
         self.add_resources(resources)
+    
+    def add_pmod(self, name, pmod, pins, invert=False):
+        if len(pins) > 1:
+            signals = [
+            Subsignal(signal,
+                    Pins(pin, dir=dir, conn=("pmod", pmod), invert=invert),
+                    Attrs(IO_STANDARD="SB_LVCMOS")
+                    ) for pin,(signal,dir) in pins.items()
+            ]
+            resources = [Resource(name, 0, *signals)]
+        else :
+            (_pin, (signal,dir)) = pins.popitem()
+            resources =  [Resource(name, 0,
+                Subsignal(signal,
+                          Pins("1 2 3 4 7 8 9 10", dir=dir, conn=("pmod", pmod), invert=invert),
+                          Attrs(IO_STANDARD="SB_LVCMOS")
+                          )
+            )]
+
+        self.add_resources(resources)
         
 
     def get_port(self):
