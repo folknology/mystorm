@@ -1,5 +1,5 @@
 from amaranth import *
-from mystorm.boards.icelogicbus import *
+from ..boards.icelogicbus import *
 
 
 class Blink(Elaboratable):

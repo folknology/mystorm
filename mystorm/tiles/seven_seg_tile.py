@@ -3,7 +3,7 @@ from typing import List
 from amaranth import *
 from amaranth.build import *
 
-from mystorm.core.sevensegdecoder import SevenSegDecoder
+from ..core.sevensegdecoder import SevenSegDecoder
 
 Pins = {"3 2 1":("ca","o"),
         "4":("g","o"),

@@ -1,7 +1,7 @@
 from amaranth import *
 from amaranth.build import *
 
-from mystorm.boards.icelogicbus import *
+from ..boards.icelogicbus import *
 
 BLADE = 1
 leds = "leds6"
