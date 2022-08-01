@@ -1,13 +1,13 @@
 from amaranth import *
 from amaranth.build import *
 
-from mystorm.boards.icelogicbus import *
+from ..boards.icelogicbus import *
 
-from mystorm.tiles.seven_seg_tile import Pins
-from mystorm.core.pll import PLL
+from ..tiles.seven_seg_tile import Pins
+from ..core.pll import PLL
 
-from mystorm.core.qspimem import QspiMem
-from mystorm.tiles.seven_seg_tile import SevenSegmentTile
+from ..core.qspimem import QspiMem
+from ..tiles.seven_seg_tile import SevenSegmentTile
 
 BLADE = 1
 TILE = 3

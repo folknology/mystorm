@@ -1,6 +1,6 @@
 from amaranth import *
 
-from mystorm.boards.icelogicbus import *
+from ..boards.icelogicbus import *
 from ..tiles.vga_tile import Pins
 from ..core.vga import VGADriver, VGATestPattern, VGATiming, vga_timings
 from ..core.pll import PLL
