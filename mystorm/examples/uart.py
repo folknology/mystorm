@@ -2,7 +2,7 @@ from amaranth import *
 from amaranth_stdio.serial import AsyncSerial
 from amaranth.build import *
 
-from mystorm.boards.icelogicbus import *
+from ..boards.icelogicbus import *
 
 PMOD = 5
 uart_pins = "ext_uart"
