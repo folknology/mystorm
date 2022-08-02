@@ -1,9 +1,9 @@
 from amaranth import *
 from amaranth.hdl.ast import Rose
 
-from mystorm.boards.icelogicbus import *
-from mystorm.tiles.seven_seg_tile import Pins
-from mystorm.core.sevensegdecoder import SevenSegDecoder
+from ..boards.icelogicbus import *
+from ..tiles.seven_seg_tile import Pins
+from ..core.sevensegdecoder import SevenSegDecoder
 
 TILE = 3
 segtile = "seven_seg_tile"

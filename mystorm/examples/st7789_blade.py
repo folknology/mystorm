@@ -1,7 +1,8 @@
 from amaranth import *
 from amaranth.build import *
-from mystorm.boards.icelogicbus import *
-from mystorm.core.st7789 import *
+
+from ..boards.icelogicbus import *
+from ..core.st7789 import *
 
 BLADE = 3
 
