@@ -7,7 +7,7 @@
 ```python
 {{#include ../../mystorm/examples/vga_example.py}}
 ```
-## VGA VGA Driver and Timings AHDL
+## VGA Driver and Timings AHDL
 ```python
 {{#include ../../mystorm/core/vga.py}}
 ```
