@@ -1,8 +1,8 @@
-# Ice LogicDeck Hardware
-The Ice LogicDeck (ILD) Hardware consists of modular tiles fitted to the main carrier board as required for the given development project. Onboard the main ILD carrier board are the Microcontroller, the FPGA some SPI Flash and connectors.
+# IceLogicBus Hardware
+The IceLogicBus (ILB) Hardware consists of modular tiles fitted to the main carrier board as required for the given development project. Onboard the main ILB carrier board are the Microcontroller, the FPGA some SPI Flash and connectors.
 
 ## Connectivity
-The ILD has two Usb connectors, the first is a Usb-C configured as a USB CDC serial device. This can allow programming of the microcontroller, FPGA and flash, along with uart and monitoring features depending on the required mode.
+The ILB has two Usb connectors, the first is a Usb-C configured as a USB CDC serial device. This can allow programming of the microcontroller, FPGA and flash, along with uart and monitoring features depending on the required mode.
 
 There is a second Usb-C (Usb-PD) Connector which operates as a high Power over Usb 
 delivery system operating from 5 to 20 volts in order to be able to power a large range of modular tiles from simple led drivers through to small motor and power-train devices. An auxiliary power supply scheme is also  provided for the more extreme power delivery requirements across the tiles.
@@ -17,9 +17,9 @@ There is an RGB led on board which can provide feedback and status of the board'
 
 There is also a 1.27mm pitch 10pin, Arm SWD debug socket adjacent to the Usb-PD if you need to debug what is running on the Microcontroller.
 
-In addition to the modular tiles there is an optional Mezzanine Tile which can expand the ILD to add useful features like extra RAM, flash, lcd display and Wi-Fi among other things, check out the [Mezzanine](./mezzanine.md) section for more information of these options.
+In addition to the modular tiles there is an optional Mezzanine Tile which can expand the ILB to add useful features like extra RAM, flash, lcd display and Wi-Fi among other things, check out the [Mezzanine](./mezzanine.md) section for more information of these options.
 
-Setting up Ice LogicDeck - Drivers and firmware:
+Setting up IceLogicBus - Drivers and firmware:
 - [DFU](./dfu_util.md)
 - [USB-CDC](./usbcdc.md)
 - [Power Delivery](./usbpd.md)

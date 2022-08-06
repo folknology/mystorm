@@ -6,7 +6,7 @@ The Mezzanine expansion tile is available in different configurations:
 
 ## Advanced Mezzanine
 Configuration includes Basic features and adds the following:
-- IPS LCD 1.3"
+- Optional IPS LCD 1.3"
 - 64Mbit HyperRam
 - 128Mbit HyperFlash
 
