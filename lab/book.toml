@@ -3,5 +3,5 @@ authors = ["Folknology"]
 language = "en"
 multilingual = false
 src = "src"
-title = "LogicDeck-Labnotes"
+title = "LogicBus-Labnotes"
 build.build-dir = "../docs"
