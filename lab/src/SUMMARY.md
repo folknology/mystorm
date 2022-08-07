@@ -15,5 +15,7 @@
     - [Audio & Video](./AV.md)
       - [Audio](./audio.md)
       - [Video](./video.md)
+  -[Blades](./blades.md)
+    [LedBlade](./ledblade.md)
 - [Reference](./refernce.md)
   - [PLL](./pll.md)
