@@ -1,5 +1,5 @@
 # Audio
-Part of the AAV Tile has a stereo jack for audio line out left and right
+Part of the Proto Tile has a stereo jack for audio line out left and right
 # Audio waveform generation
 ```python
 {{#include ../../mystorm/core/audio.py}}
