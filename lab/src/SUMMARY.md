@@ -2,6 +2,8 @@
 - [Introduction](README.md)
 - [Setup](setup.md)
 - [Hardware](hardware.md)
+  - [IceLogicBus](./icelogicbus.md)
+  - [BlackEdge Nxt](./blackedgenxt.md)
   - [USB-CDC](./usbcdc.md)
   - [Power-Train](./power_train.md)
 - [Tools](tools.md)

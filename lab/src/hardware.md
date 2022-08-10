@@ -17,8 +17,3 @@ There is an RGB led on board which can provide feedback and status of the board'
 
 There is also a 1.27mm pitch 10pin, Arm SWD debug connector if you need to debug what is [BlackCrab](./blackcrab.md) running on the BEC.
 
-
-Setting up IceLogicBus - Drivers and firmware:
-- [QSPIMEM](./qspimem.md)
-- [USB-CDC](./usbcdc.md)
-- [Power Delivery](./usbpd.md)

@@ -1,3 +1,3 @@
-# mystorm
+# myStorm
 
-The mystorm package contains all of the tools and systhesis support for the mystorm hardware including Amaranth board support and PCF filwes for Verilog
+The mystorm package contains all of the tools and sythesis support for the mystorm hardware including Amaranth board support and PCF files for Verilog
