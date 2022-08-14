@@ -180,6 +180,7 @@ delivery system operating from 5 to 20 volts in order to be able to power a larg
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="usb-cdc"><a class="header" href="#usb-cdc">USB-CDC</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="power-train"><a class="header" href="#power-train">Power-Train</a></h1>
+<p>The IcelogicBus has two low voltage supplies for the core (1v2), logic (3v3) and interfacing which are derived from the USB (5v) supply. In addition there is a secodnd higher power supply which can be sourced either via the second USB Power delivery or via the optional XT30 connector, this is the power routed to the tiles.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="tools"><a class="header" href="#tools">Tools</a></h1>
 <p>Installing the HDL tools:</p>
 <ul>
@@ -966,7 +967,7 @@ if __name__ == &quot;__main__&quot;:
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="qspi"><a class="header" href="#qspi">QSPI</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="qspimem"><a class="header" href="#qspimem">QSPIMEM</a></h1>
-<p>QSPIMEM is a simple serial protocol that enables Host&lt;-&gt;BlackEdge&lt;-&gt;FPGA transfers and communications. This can be as simple as programing the flash,FPGA image or reading and writing to and from memory etc..</p>
+<p>QSPIMEM is a simple serial protocol that enables Host&lt;-&gt;BlackEdge&lt;-&gt;FPGA transfers and communications. This can be as simple as programing the flash, FPGA image or reading and writing to and from memory etc..</p>
 <pre><code class="language-python">from amaranth import *
 from amaranth.build import *
 
@@ -1071,6 +1072,7 @@ if __name__ == &quot;__main__&quot;:
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="memory"><a class="header" href="#memory">Memory</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="hyperram"><a class="header" href="#hyperram">HyperRam</a></h1>
+<p>The FPGA has connections available to HyperRam which provides either hyperbus SDR or DDR byte parralel access which is a good compromise for IOs and speed. This memeroy can be used for buffering things like video or generic SOC Ram use.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="hyperflash"><a class="header" href="#hyperflash">HyperFlash</a></h1>
 <pre><code class="language-python">from amaranth import *
 from amaranth.build import *
@@ -1246,6 +1248,7 @@ if __name__ == &quot;__main__&quot;:
     send_file(&quot;stormsoc.bin&quot;)
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="core"><a class="header" href="#core">Core</a></h1>
+<p>The core part of the mystorm library comtzins commen useful HDL components such as PLL, memory and display support.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="pll"><a class="header" href="#pll">PLL</a></h1>
 <p>The FPGA boards have fixed frequency clocks as inputs generated externally.</p>
 <p>Very often, we want to run part or all of our logic at a different clock speed.</p>
