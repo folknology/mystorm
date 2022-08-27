@@ -1,0 +1,23 @@
+set_io clk25 B7
+set_io clkout25 E9
+set_io clkoutx5 E8
+
+#set_io hdmi_p[3] C8
+#set_io hdmi_p[0] A5
+#set_io hdmi_p[1] A3
+#set_io hdmi_p[2] C7
+
+#set_io hdmi_n[3] A9
+#set_io hdmi_n[0] A6
+#set_io hdmi_n[1] A2
+#set_io hdmi_n[2] A8
+
+set_io hdmi_p[3] B2
+set_io hdmi_p[0] C1
+set_io hdmi_p[1] D1
+set_io hdmi_p[2] C3
+
+set_io hdmi_n[3] B1
+set_io hdmi_n[0] C2
+set_io hdmi_n[1] E1
+set_io hdmi_n[2] C4
