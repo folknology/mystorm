@@ -9,6 +9,21 @@ from amaranth.vendor.lattice_ice40 import LatticeICE40Platform
 
 __all__ = ["IceLogicBusPlatform"]
 
+#            Tile 1                    Tile 3
+#         *-------------------------------------*
+#         |                                     |
+#         |                                     |
+# Blade 1 |                                     | Blade 2
+#         |                                     |
+#         |                                     |
+# USB     |            BlackiceNxt              | Blade 2
+#         |                                     |
+#         |                                     |
+# SD/MMC  |                                     | Blade 3
+#         |                                     |
+#         |                                     |
+#         *-------------------------------------*
+#            Tile 2                    Tile 4
 
 class PortNotFound(Exception):
     pass
