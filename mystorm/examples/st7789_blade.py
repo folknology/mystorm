@@ -14,6 +14,7 @@ oled = {"1":("oled_bl","o"),
         "6":("oled_mosi","o")}
 
 
+
 class ST7789Test(Elaboratable):
     def elaborate(self, platform):
         # led = [platform.request("led", i) for i in range(4)]
