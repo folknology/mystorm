@@ -21,11 +21,11 @@ module trail(input clk, output [5:0] leds);
 	reg [5:0] led = 4'b1;
 
 	always @(posedge clk) begin
-    count <= count + 1;
-    if (count[22]) begin
-  	count <= 0;
-  	led <= {~led[0], led[5:1]};
-	  end
+    	count <= count + 1;
+    	if (count[22]) begin
+  			count <= 0;
+  			led <= {~led[0], led[5:1]};
+	  	end
 	end
 
 endmodule
