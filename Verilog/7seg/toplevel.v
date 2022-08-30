@@ -9,8 +9,8 @@ module toplevel(
 
  wire [11:0] val = timer[36:25];
  wire [2:0] ca;
- wire  g, f, e, d, c, b, a;
- assign tile3 = {c, 1, d, 1, b, e, a, f, g, ca};
+ wire  a,b,c,d,e,f,g;
+ assign tile3 = {c, 'b1, d, 'b1, b, e, a, f, g, ca};
  
 
  always @(posedge clk) timer <= timer + 1;
