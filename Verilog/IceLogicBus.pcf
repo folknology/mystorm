@@ -159,3 +159,40 @@ set_io -nowarn  ss L7
 # LED
 set_io -nowarn  led J11
 # Mezzanine
+
+#Double PMOD Tile pinouts
+#PMOD4A
+set_io -nowarn  pm4a[0] A9
+set_io -nowarn  pm4a[1] A8
+set_io -nowarn  pm4a[2] A6
+set_io -nowarn  pm4a[3] A2
+
+#PMODs
+set_io -nowarn  pm4b[1] C7
+set_io -nowarn  pm4b[2] A5
+set_io -nowarn  pm4b[3] A3
+
+#PMOD5A
+set_io -nowarn  pm5a[0] F11
+set_io -nowarn  pm5a[1] E10
+set_io -nowarn  pm5a[2] K11
+set_io -nowarn  pm5a[3] J10
+
+#PMOD5B
+set_io -nowarn  pm5b[0] E9
+set_io -nowarn  pm5b[1] E8
+set_io -nowarn  pm5b[2] H10
+set_io -nowarn  pm5b[3] G8
+
+#PMOD6A
+set_io -nowarn  pm6a[0] H11
+set_io -nowarn  pm6a[1] D9
+set_io -nowarn  pm6a[2] G9
+set_io -nowarn  pm6a[3] F10
+
+#PMOD6B
+set_io -nowarn  pm6b[0] G10
+set_io -nowarn  pm6b[1] E11
+set_io -nowarn  pm6b[2] G11
+set_io -nowarn  pm6b[3] F9
+
