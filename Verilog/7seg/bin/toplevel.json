@@ -9668,7 +9668,7 @@
         },
         "tile3": {
           "direction": "output",
-          "bits": [ 3, 4, 5, 6, 7, 8, 9, 10, "1", "0", "0", "0" ]
+          "bits": [ 3, 4, 5, 6, 7, 8, 9, 10, "1", 11, "1", 12 ]
         }
       },
       "cells": {
@@ -9690,111 +9690,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 11 ],
-            "I1": [ 12 ],
-            "I2": [ 13 ],
-            "I3": [ 14 ],
+            "I0": [ 13 ],
+            "I1": [ 14 ],
+            "I2": [ 15 ],
+            "I3": [ 16 ],
             "O": [ 8 ]
-          }
-        },
-        "a_SB_LUT4_O_I0_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000111100010001"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/awood/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 15 ],
-            "I1": [ 16 ],
-            "I2": [ 17 ],
-            "I3": [ 18 ],
-            "O": [ 12 ]
-          }
-        },
-        "a_SB_LUT4_O_I0_SB_LUT4_O_1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000111100010001"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/awood/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 19 ],
-            "I1": [ 20 ],
-            "I2": [ 21 ],
-            "I3": [ 18 ],
-            "O": [ 14 ]
-          }
-        },
-        "a_SB_LUT4_O_I0_SB_LUT4_O_2": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000111100010001"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/awood/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 22 ],
-            "I1": [ 23 ],
-            "I2": [ 24 ],
-            "I3": [ 18 ],
-            "O": [ 13 ]
-          }
-        },
-        "a_SB_LUT4_O_I0_SB_LUT4_O_3": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000111100010001"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/awood/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 25 ],
-            "I1": [ 26 ],
-            "I2": [ 27 ],
-            "I3": [ 18 ],
-            "O": [ 11 ]
           }
         },
         "b_SB_LUT4_O": {
@@ -9815,11 +9715,61 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 14 ],
-            "I1": [ 13 ],
-            "I2": [ 12 ],
-            "I3": [ 11 ],
+            "I0": [ 16 ],
+            "I1": [ 15 ],
+            "I2": [ 14 ],
+            "I3": [ 13 ],
             "O": [ 10 ]
+          }
+        },
+        "c_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0100000000001101"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/awood/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 15 ],
+            "I1": [ 13 ],
+            "I2": [ 16 ],
+            "I3": [ 14 ],
+            "O": [ 12 ]
+          }
+        },
+        "d_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0001100010000011"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/awood/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 14 ],
+            "I1": [ 15 ],
+            "I2": [ 13 ],
+            "I3": [ 16 ],
+            "O": [ 11 ]
           }
         },
         "e_SB_LUT4_O": {
@@ -9840,10 +9790,10 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 11 ],
-            "I1": [ 14 ],
-            "I2": [ 12 ],
-            "I3": [ 13 ],
+            "I0": [ 13 ],
+            "I1": [ 16 ],
+            "I2": [ 14 ],
+            "I3": [ 15 ],
             "O": [ 9 ]
           }
         },
@@ -9865,10 +9815,10 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 11 ],
-            "I1": [ 14 ],
-            "I2": [ 13 ],
-            "I3": [ 12 ],
+            "I0": [ 13 ],
+            "I1": [ 16 ],
+            "I2": [ 15 ],
+            "I3": [ 14 ],
             "O": [ 7 ]
           }
         },
@@ -9890,10 +9840,10 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 11 ],
-            "I1": [ 14 ],
-            "I2": [ 13 ],
-            "I3": [ 12 ],
+            "I0": [ 13 ],
+            "I1": [ 16 ],
+            "I2": [ 15 ],
+            "I3": [ 14 ],
             "O": [ 6 ]
           }
         },
@@ -9915,7 +9865,7 @@
           "connections": {
             "C": [ 2 ],
             "D": [ 5 ],
-            "E": [ 28 ],
+            "E": [ 17 ],
             "Q": [ 3 ]
           }
         },
@@ -9937,11 +9887,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 29 ],
-            "I1": [ 30 ],
+            "I0": [ 18 ],
+            "I1": [ 19 ],
             "I2": [ 3 ],
-            "I3": [ 31 ],
-            "O": [ 16 ]
+            "I3": [ 20 ],
+            "O": [ 21 ]
           }
         },
         "seg7.ca_SB_LUT4_I2_1": {
@@ -9962,11 +9912,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 29 ],
-            "I1": [ 30 ],
+            "I0": [ 18 ],
+            "I1": [ 19 ],
             "I2": [ 3 ],
-            "I3": [ 32 ],
-            "O": [ 15 ]
+            "I3": [ 22 ],
+            "O": [ 23 ]
           }
         },
         "seg7.ca_SB_LUT4_I2_2": {
@@ -9987,11 +9937,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 29 ],
-            "I1": [ 30 ],
+            "I0": [ 18 ],
+            "I1": [ 19 ],
             "I2": [ 3 ],
-            "I3": [ 33 ],
-            "O": [ 20 ]
+            "I3": [ 24 ],
+            "O": [ 25 ]
           }
         },
         "seg7.ca_SB_LUT4_I2_3": {
@@ -10012,11 +9962,36 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 29 ],
-            "I1": [ 30 ],
+            "I0": [ 18 ],
+            "I1": [ 19 ],
             "I2": [ 3 ],
-            "I3": [ 34 ],
-            "O": [ 19 ]
+            "I3": [ 26 ],
+            "O": [ 27 ]
+          }
+        },
+        "seg7.ca_SB_LUT4_I2_3_O_SB_LUT4_I0": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000111100010001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/awood/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 27 ],
+            "I1": [ 25 ],
+            "I2": [ 28 ],
+            "I3": [ 29 ],
+            "O": [ 16 ]
           }
         },
         "seg7.ca_SB_LUT4_I2_4": {
@@ -10037,11 +10012,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 29 ],
-            "I1": [ 30 ],
+            "I0": [ 18 ],
+            "I1": [ 19 ],
             "I2": [ 3 ],
-            "I3": [ 35 ],
-            "O": [ 23 ]
+            "I3": [ 30 ],
+            "O": [ 31 ]
           }
         },
         "seg7.ca_SB_LUT4_I2_5": {
@@ -10062,11 +10037,36 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 29 ],
-            "I1": [ 30 ],
+            "I0": [ 18 ],
+            "I1": [ 19 ],
             "I2": [ 3 ],
-            "I3": [ 36 ],
-            "O": [ 22 ]
+            "I3": [ 32 ],
+            "O": [ 33 ]
+          }
+        },
+        "seg7.ca_SB_LUT4_I2_5_O_SB_LUT4_I0": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000111100010001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/awood/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 33 ],
+            "I1": [ 31 ],
+            "I2": [ 34 ],
+            "I3": [ 29 ],
+            "O": [ 15 ]
           }
         },
         "seg7.ca_SB_LUT4_I2_6": {
@@ -10087,11 +10087,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 29 ],
-            "I1": [ 30 ],
+            "I0": [ 18 ],
+            "I1": [ 19 ],
             "I2": [ 3 ],
-            "I3": [ 37 ],
-            "O": [ 26 ]
+            "I3": [ 35 ],
+            "O": [ 36 ]
           }
         },
         "seg7.ca_SB_LUT4_I2_7": {
@@ -10112,11 +10112,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 29 ],
-            "I1": [ 30 ],
+            "I0": [ 18 ],
+            "I1": [ 19 ],
             "I2": [ 3 ],
-            "I3": [ 38 ],
-            "O": [ 25 ]
+            "I3": [ 37 ],
+            "O": [ 38 ]
           }
         },
         "seg7.ca_SB_LUT4_I2_8": {
@@ -10138,10 +10138,60 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 30 ],
+            "I1": [ 19 ],
             "I2": [ 3 ],
+            "I3": [ 18 ],
+            "O": [ 29 ]
+          }
+        },
+        "seg7.ca_SB_LUT4_I2_O_SB_LUT4_I0": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000111100010001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/awood/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 23 ],
+            "I1": [ 21 ],
+            "I2": [ 39 ],
             "I3": [ 29 ],
-            "O": [ 18 ]
+            "O": [ 14 ]
+          }
+        },
+        "seg7.ca_SB_LUT4_I2_O_SB_LUT4_I0_O_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000111100010001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/awood/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 38 ],
+            "I1": [ 36 ],
+            "I2": [ 40 ],
+            "I3": [ 29 ],
+            "O": [ 13 ]
           }
         },
         "seg7.ca_SB_LUT4_I3": {
@@ -10166,7 +10216,7 @@
             "I1": [ "0" ],
             "I2": [ "0" ],
             "I3": [ 3 ],
-            "O": [ 39 ]
+            "O": [ 41 ]
           }
         },
         "seg7.ca_SB_LUT4_O": {
@@ -10190,7 +10240,7 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 29 ],
+            "I3": [ 18 ],
             "O": [ 5 ]
           }
         },
@@ -10209,10 +10259,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 40 ],
-            "CO": [ 41 ],
+            "CI": [ 42 ],
+            "CO": [ 43 ],
             "I0": [ "0" ],
-            "I1": [ 42 ]
+            "I1": [ 44 ]
           }
         },
         "seg7.count_SB_CARRY_I1": {
@@ -10230,10 +10280,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 43 ],
-            "CO": [ 44 ],
+            "CI": [ 45 ],
+            "CO": [ 46 ],
             "I0": [ "0" ],
-            "I1": [ 45 ]
+            "I1": [ 47 ]
           }
         },
         "seg7.count_SB_CARRY_I1_1": {
@@ -10251,10 +10301,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 46 ],
-            "CO": [ 43 ],
+            "CI": [ 48 ],
+            "CO": [ 45 ],
             "I0": [ "0" ],
-            "I1": [ 47 ]
+            "I1": [ 49 ]
           }
         },
         "seg7.count_SB_CARRY_I1_10": {
@@ -10272,10 +10322,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 48 ],
-            "CO": [ 49 ],
+            "CI": [ 50 ],
+            "CO": [ 51 ],
             "I0": [ "0" ],
-            "I1": [ 50 ]
+            "I1": [ 52 ]
           }
         },
         "seg7.count_SB_CARRY_I1_11": {
@@ -10293,34 +10343,13 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 51 ],
-            "CO": [ 48 ],
-            "I0": [ "0" ],
-            "I1": [ 52 ]
-          }
-        },
-        "seg7.count_SB_CARRY_I1_12": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "toplevel.v:25.20-28.3|7seg_display.v:38.15-38.24|/home/awood/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
             "CI": [ 53 ],
-            "CO": [ 51 ],
+            "CO": [ 50 ],
             "I0": [ "0" ],
             "I1": [ 54 ]
           }
         },
-        "seg7.count_SB_CARRY_I1_13": {
+        "seg7.count_SB_CARRY_I1_12": {
           "hide_name": 0,
           "type": "SB_CARRY",
           "parameters": {
@@ -10341,6 +10370,27 @@
             "I1": [ 56 ]
           }
         },
+        "seg7.count_SB_CARRY_I1_13": {
+          "hide_name": 0,
+          "type": "SB_CARRY",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "toplevel.v:25.20-28.3|7seg_display.v:38.15-38.24|/home/awood/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "I0": "input",
+            "I1": "input"
+          },
+          "connections": {
+            "CI": [ 57 ],
+            "CO": [ 55 ],
+            "I0": [ "0" ],
+            "I1": [ 58 ]
+          }
+        },
         "seg7.count_SB_CARRY_I1_14": {
           "hide_name": 0,
           "type": "SB_CARRY",
@@ -10356,10 +10406,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 44 ],
-            "CO": [ 55 ],
+            "CI": [ 46 ],
+            "CO": [ 57 ],
             "I0": [ "0" ],
-            "I1": [ 57 ]
+            "I1": [ 59 ]
           }
         },
         "seg7.count_SB_CARRY_I1_2": {
@@ -10377,34 +10427,13 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 58 ],
-            "CO": [ 46 ],
-            "I0": [ "0" ],
-            "I1": [ 59 ]
-          }
-        },
-        "seg7.count_SB_CARRY_I1_3": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "toplevel.v:25.20-28.3|7seg_display.v:38.15-38.24|/home/awood/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
             "CI": [ 60 ],
-            "CO": [ 58 ],
+            "CO": [ 48 ],
             "I0": [ "0" ],
             "I1": [ 61 ]
           }
         },
-        "seg7.count_SB_CARRY_I1_4": {
+        "seg7.count_SB_CARRY_I1_3": {
           "hide_name": 0,
           "type": "SB_CARRY",
           "parameters": {
@@ -10425,7 +10454,7 @@
             "I1": [ 63 ]
           }
         },
-        "seg7.count_SB_CARRY_I1_5": {
+        "seg7.count_SB_CARRY_I1_4": {
           "hide_name": 0,
           "type": "SB_CARRY",
           "parameters": {
@@ -10446,7 +10475,7 @@
             "I1": [ 65 ]
           }
         },
-        "seg7.count_SB_CARRY_I1_6": {
+        "seg7.count_SB_CARRY_I1_5": {
           "hide_name": 0,
           "type": "SB_CARRY",
           "parameters": {
@@ -10467,6 +10496,27 @@
             "I1": [ 67 ]
           }
         },
+        "seg7.count_SB_CARRY_I1_6": {
+          "hide_name": 0,
+          "type": "SB_CARRY",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "toplevel.v:25.20-28.3|7seg_display.v:38.15-38.24|/home/awood/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "I0": "input",
+            "I1": "input"
+          },
+          "connections": {
+            "CI": [ 68 ],
+            "CO": [ 66 ],
+            "I0": [ "0" ],
+            "I1": [ 69 ]
+          }
+        },
         "seg7.count_SB_CARRY_I1_7": {
           "hide_name": 0,
           "type": "SB_CARRY",
@@ -10482,10 +10532,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 41 ],
-            "CO": [ 66 ],
+            "CI": [ 43 ],
+            "CO": [ 68 ],
             "I0": [ "0" ],
-            "I1": [ 68 ]
+            "I1": [ 70 ]
           }
         },
         "seg7.count_SB_CARRY_I1_8": {
@@ -10503,10 +10553,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 69 ],
-            "CO": [ 70 ],
+            "CI": [ 71 ],
+            "CO": [ 72 ],
             "I0": [ "0" ],
-            "I1": [ 71 ]
+            "I1": [ 73 ]
           }
         },
         "seg7.count_SB_CARRY_I1_9": {
@@ -10524,10 +10574,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 49 ],
-            "CO": [ 69 ],
+            "CI": [ 51 ],
+            "CO": [ 71 ],
             "I0": [ "0" ],
-            "I1": [ 72 ]
+            "I1": [ 74 ]
           }
         },
         "seg7.count_SB_DFFSR_Q": {
@@ -10547,9 +10597,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 73 ],
-            "Q": [ 28 ],
-            "R": [ 28 ]
+            "D": [ 75 ],
+            "Q": [ 17 ],
+            "R": [ 17 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_1": {
@@ -10569,9 +10619,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 74 ],
-            "Q": [ 71 ],
-            "R": [ 28 ]
+            "D": [ 76 ],
+            "Q": [ 73 ],
+            "R": [ 17 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_10": {
@@ -10591,9 +10641,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 75 ],
-            "Q": [ 59 ],
-            "R": [ 28 ]
+            "D": [ 77 ],
+            "Q": [ 61 ],
+            "R": [ 17 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_11": {
@@ -10613,9 +10663,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 76 ],
-            "Q": [ 61 ],
-            "R": [ 28 ]
+            "D": [ 78 ],
+            "Q": [ 63 ],
+            "R": [ 17 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_12": {
@@ -10635,9 +10685,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 77 ],
-            "Q": [ 63 ],
-            "R": [ 28 ]
+            "D": [ 79 ],
+            "Q": [ 65 ],
+            "R": [ 17 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_13": {
@@ -10657,9 +10707,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 78 ],
-            "Q": [ 65 ],
-            "R": [ 28 ]
+            "D": [ 80 ],
+            "Q": [ 67 ],
+            "R": [ 17 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_14": {
@@ -10679,9 +10729,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 79 ],
-            "Q": [ 67 ],
-            "R": [ 28 ]
+            "D": [ 81 ],
+            "Q": [ 69 ],
+            "R": [ 17 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_15": {
@@ -10701,9 +10751,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 80 ],
-            "Q": [ 68 ],
-            "R": [ 28 ]
+            "D": [ 82 ],
+            "Q": [ 70 ],
+            "R": [ 17 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_16": {
@@ -10723,9 +10773,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 81 ],
-            "Q": [ 42 ],
-            "R": [ 28 ]
+            "D": [ 83 ],
+            "Q": [ 44 ],
+            "R": [ 17 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_17": {
@@ -10745,9 +10795,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 82 ],
-            "Q": [ 40 ],
-            "R": [ 28 ]
+            "D": [ 84 ],
+            "Q": [ 42 ],
+            "R": [ 17 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_2": {
@@ -10767,9 +10817,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 83 ],
-            "Q": [ 72 ],
-            "R": [ 28 ]
+            "D": [ 85 ],
+            "Q": [ 74 ],
+            "R": [ 17 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_3": {
@@ -10789,9 +10839,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 84 ],
-            "Q": [ 50 ],
-            "R": [ 28 ]
+            "D": [ 86 ],
+            "Q": [ 52 ],
+            "R": [ 17 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_4": {
@@ -10811,9 +10861,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 85 ],
-            "Q": [ 52 ],
-            "R": [ 28 ]
+            "D": [ 87 ],
+            "Q": [ 54 ],
+            "R": [ 17 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_5": {
@@ -10833,9 +10883,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 86 ],
-            "Q": [ 54 ],
-            "R": [ 28 ]
+            "D": [ 88 ],
+            "Q": [ 56 ],
+            "R": [ 17 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_6": {
@@ -10855,9 +10905,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 87 ],
-            "Q": [ 56 ],
-            "R": [ 28 ]
+            "D": [ 89 ],
+            "Q": [ 58 ],
+            "R": [ 17 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_7": {
@@ -10877,9 +10927,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 88 ],
-            "Q": [ 57 ],
-            "R": [ 28 ]
+            "D": [ 90 ],
+            "Q": [ 59 ],
+            "R": [ 17 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_8": {
@@ -10899,9 +10949,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 89 ],
-            "Q": [ 45 ],
-            "R": [ 28 ]
+            "D": [ 91 ],
+            "Q": [ 47 ],
+            "R": [ 17 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_9": {
@@ -10921,9 +10971,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 90 ],
-            "Q": [ 47 ],
-            "R": [ 28 ]
+            "D": [ 92 ],
+            "Q": [ 49 ],
+            "R": [ 17 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_D_SB_LUT4_O": {
@@ -10946,9 +10996,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 45 ],
-            "I3": [ 43 ],
-            "O": [ 89 ]
+            "I2": [ 47 ],
+            "I3": [ 45 ],
+            "O": [ 91 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_D_SB_LUT4_O_1": {
@@ -10971,9 +11021,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 47 ],
-            "I3": [ 46 ],
-            "O": [ 90 ]
+            "I2": [ 49 ],
+            "I3": [ 48 ],
+            "O": [ 92 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_D_SB_LUT4_O_10": {
@@ -10996,9 +11046,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 71 ],
-            "I3": [ 69 ],
-            "O": [ 74 ]
+            "I2": [ 73 ],
+            "I3": [ 71 ],
+            "O": [ 76 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_D_SB_LUT4_O_11": {
@@ -11021,9 +11071,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 72 ],
-            "I3": [ 49 ],
-            "O": [ 83 ]
+            "I2": [ 74 ],
+            "I3": [ 51 ],
+            "O": [ 85 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_D_SB_LUT4_O_12": {
@@ -11046,9 +11096,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 50 ],
-            "I3": [ 48 ],
-            "O": [ 84 ]
+            "I2": [ 52 ],
+            "I3": [ 50 ],
+            "O": [ 86 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_D_SB_LUT4_O_13": {
@@ -11071,9 +11121,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 52 ],
-            "I3": [ 51 ],
-            "O": [ 85 ]
+            "I2": [ 54 ],
+            "I3": [ 53 ],
+            "O": [ 87 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_D_SB_LUT4_O_14": {
@@ -11096,9 +11146,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 54 ],
-            "I3": [ 53 ],
-            "O": [ 86 ]
+            "I2": [ 56 ],
+            "I3": [ 55 ],
+            "O": [ 88 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_D_SB_LUT4_O_15": {
@@ -11121,9 +11171,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 56 ],
-            "I3": [ 55 ],
-            "O": [ 87 ]
+            "I2": [ 58 ],
+            "I3": [ 57 ],
+            "O": [ 89 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_D_SB_LUT4_O_16": {
@@ -11146,9 +11196,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 57 ],
-            "I3": [ 44 ],
-            "O": [ 88 ]
+            "I2": [ 59 ],
+            "I3": [ 46 ],
+            "O": [ 90 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_D_SB_LUT4_O_17": {
@@ -11172,8 +11222,8 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 40 ],
-            "O": [ 82 ]
+            "I3": [ 42 ],
+            "O": [ 84 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_D_SB_LUT4_O_2": {
@@ -11196,9 +11246,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 59 ],
-            "I3": [ 58 ],
-            "O": [ 75 ]
+            "I2": [ 61 ],
+            "I3": [ 60 ],
+            "O": [ 77 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_D_SB_LUT4_O_3": {
@@ -11221,9 +11271,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 61 ],
-            "I3": [ 60 ],
-            "O": [ 76 ]
+            "I2": [ 63 ],
+            "I3": [ 62 ],
+            "O": [ 78 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_D_SB_LUT4_O_4": {
@@ -11246,9 +11296,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 63 ],
-            "I3": [ 62 ],
-            "O": [ 77 ]
+            "I2": [ 65 ],
+            "I3": [ 64 ],
+            "O": [ 79 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_D_SB_LUT4_O_5": {
@@ -11271,9 +11321,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 65 ],
-            "I3": [ 64 ],
-            "O": [ 78 ]
+            "I2": [ 67 ],
+            "I3": [ 66 ],
+            "O": [ 80 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_D_SB_LUT4_O_6": {
@@ -11296,9 +11346,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 67 ],
-            "I3": [ 66 ],
-            "O": [ 79 ]
+            "I2": [ 69 ],
+            "I3": [ 68 ],
+            "O": [ 81 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_D_SB_LUT4_O_7": {
@@ -11321,9 +11371,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 68 ],
-            "I3": [ 41 ],
-            "O": [ 80 ]
+            "I2": [ 70 ],
+            "I3": [ 43 ],
+            "O": [ 82 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_D_SB_LUT4_O_8": {
@@ -11346,9 +11396,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 42 ],
-            "I3": [ 40 ],
-            "O": [ 81 ]
+            "I2": [ 44 ],
+            "I3": [ 42 ],
+            "O": [ 83 ]
           }
         },
         "seg7.count_SB_DFFSR_Q_D_SB_LUT4_O_9": {
@@ -11371,9 +11421,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 28 ],
-            "I3": [ 70 ],
-            "O": [ 73 ]
+            "I2": [ 17 ],
+            "I3": [ 72 ],
+            "O": [ 75 ]
           }
         },
         "tile3_SB_LUT4_O": {
@@ -11397,7 +11447,7 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 30 ],
+            "I3": [ 19 ],
             "O": [ 4 ]
           }
         },
@@ -11418,9 +11468,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 30 ],
-            "E": [ 28 ],
-            "Q": [ 29 ]
+            "D": [ 19 ],
+            "E": [ 17 ],
+            "Q": [ 18 ]
           }
         },
         "tile3_SB_LUT4_O_I3_SB_DFFE_Q_1": {
@@ -11440,9 +11490,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 39 ],
-            "E": [ 28 ],
-            "Q": [ 30 ]
+            "D": [ 41 ],
+            "E": [ 17 ],
+            "Q": [ 19 ]
           }
         },
         "timer_SB_CARRY_CI": {
@@ -11460,10 +11510,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 91 ],
-            "CO": [ 92 ],
+            "CI": [ 93 ],
+            "CO": [ 94 ],
             "I0": [ "0" ],
-            "I1": [ 93 ]
+            "I1": [ 95 ]
           }
         },
         "timer_SB_CARRY_I1": {
@@ -11481,10 +11531,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 94 ],
-            "CO": [ 95 ],
+            "CI": [ 96 ],
+            "CO": [ 97 ],
             "I0": [ "0" ],
-            "I1": [ 96 ]
+            "I1": [ 98 ]
           }
         },
         "timer_SB_CARRY_I1_1": {
@@ -11502,10 +11552,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 97 ],
-            "CO": [ 94 ],
+            "CI": [ 99 ],
+            "CO": [ 96 ],
             "I0": [ "0" ],
-            "I1": [ 98 ]
+            "I1": [ 100 ]
           }
         },
         "timer_SB_CARRY_I1_10": {
@@ -11523,10 +11573,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 99 ],
-            "CO": [ 100 ],
+            "CI": [ 101 ],
+            "CO": [ 102 ],
             "I0": [ "0" ],
-            "I1": [ 32 ]
+            "I1": [ 22 ]
           }
         },
         "timer_SB_CARRY_I1_11": {
@@ -11544,10 +11594,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 101 ],
-            "CO": [ 99 ],
+            "CI": [ 103 ],
+            "CO": [ 101 ],
             "I0": [ "0" ],
-            "I1": [ 34 ]
+            "I1": [ 26 ]
           }
         },
         "timer_SB_CARRY_I1_12": {
@@ -11565,10 +11615,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 102 ],
-            "CO": [ 101 ],
+            "CI": [ 104 ],
+            "CO": [ 103 ],
             "I0": [ "0" ],
-            "I1": [ 36 ]
+            "I1": [ 32 ]
           }
         },
         "timer_SB_CARRY_I1_13": {
@@ -11586,10 +11636,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 92 ],
-            "CO": [ 103 ],
+            "CI": [ 94 ],
+            "CO": [ 105 ],
             "I0": [ "0" ],
-            "I1": [ 104 ]
+            "I1": [ 106 ]
           }
         },
         "timer_SB_CARRY_I1_14": {
@@ -11607,10 +11657,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 105 ],
-            "CO": [ 102 ],
+            "CI": [ 107 ],
+            "CO": [ 104 ],
             "I0": [ "0" ],
-            "I1": [ 38 ]
+            "I1": [ 37 ]
           }
         },
         "timer_SB_CARRY_I1_15": {
@@ -11628,10 +11678,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 106 ],
-            "CO": [ 105 ],
+            "CI": [ 108 ],
+            "CO": [ 107 ],
             "I0": [ "0" ],
-            "I1": [ 17 ]
+            "I1": [ 39 ]
           }
         },
         "timer_SB_CARRY_I1_16": {
@@ -11649,10 +11699,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 107 ],
-            "CO": [ 106 ],
+            "CI": [ 109 ],
+            "CO": [ 108 ],
             "I0": [ "0" ],
-            "I1": [ 21 ]
+            "I1": [ 28 ]
           }
         },
         "timer_SB_CARRY_I1_17": {
@@ -11670,10 +11720,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 108 ],
-            "CO": [ 107 ],
+            "CI": [ 110 ],
+            "CO": [ 109 ],
             "I0": [ "0" ],
-            "I1": [ 24 ]
+            "I1": [ 34 ]
           }
         },
         "timer_SB_CARRY_I1_18": {
@@ -11691,10 +11741,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 109 ],
-            "CO": [ 108 ],
+            "CI": [ 111 ],
+            "CO": [ 110 ],
             "I0": [ "0" ],
-            "I1": [ 27 ]
+            "I1": [ 40 ]
           }
         },
         "timer_SB_CARRY_I1_19": {
@@ -11712,10 +11762,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 110 ],
-            "CO": [ 109 ],
+            "CI": [ 112 ],
+            "CO": [ 111 ],
             "I0": [ "0" ],
-            "I1": [ 111 ]
+            "I1": [ 113 ]
           }
         },
         "timer_SB_CARRY_I1_2": {
@@ -11733,10 +11783,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 112 ],
-            "CO": [ 97 ],
+            "CI": [ 114 ],
+            "CO": [ 99 ],
             "I0": [ "0" ],
-            "I1": [ 113 ]
+            "I1": [ 115 ]
           }
         },
         "timer_SB_CARRY_I1_20": {
@@ -11754,34 +11804,13 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 114 ],
-            "CO": [ 110 ],
-            "I0": [ "0" ],
-            "I1": [ 115 ]
-          }
-        },
-        "timer_SB_CARRY_I1_21": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "toplevel.v:16.33-16.42|/home/awood/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
             "CI": [ 116 ],
-            "CO": [ 114 ],
+            "CO": [ 112 ],
             "I0": [ "0" ],
             "I1": [ 117 ]
           }
         },
-        "timer_SB_CARRY_I1_22": {
+        "timer_SB_CARRY_I1_21": {
           "hide_name": 0,
           "type": "SB_CARRY",
           "parameters": {
@@ -11802,7 +11831,7 @@
             "I1": [ 119 ]
           }
         },
-        "timer_SB_CARRY_I1_23": {
+        "timer_SB_CARRY_I1_22": {
           "hide_name": 0,
           "type": "SB_CARRY",
           "parameters": {
@@ -11823,7 +11852,7 @@
             "I1": [ 121 ]
           }
         },
-        "timer_SB_CARRY_I1_24": {
+        "timer_SB_CARRY_I1_23": {
           "hide_name": 0,
           "type": "SB_CARRY",
           "parameters": {
@@ -11844,7 +11873,7 @@
             "I1": [ 123 ]
           }
         },
-        "timer_SB_CARRY_I1_25": {
+        "timer_SB_CARRY_I1_24": {
           "hide_name": 0,
           "type": "SB_CARRY",
           "parameters": {
@@ -11865,7 +11894,7 @@
             "I1": [ 125 ]
           }
         },
-        "timer_SB_CARRY_I1_26": {
+        "timer_SB_CARRY_I1_25": {
           "hide_name": 0,
           "type": "SB_CARRY",
           "parameters": {
@@ -11886,7 +11915,7 @@
             "I1": [ 127 ]
           }
         },
-        "timer_SB_CARRY_I1_27": {
+        "timer_SB_CARRY_I1_26": {
           "hide_name": 0,
           "type": "SB_CARRY",
           "parameters": {
@@ -11907,7 +11936,7 @@
             "I1": [ 129 ]
           }
         },
-        "timer_SB_CARRY_I1_28": {
+        "timer_SB_CARRY_I1_27": {
           "hide_name": 0,
           "type": "SB_CARRY",
           "parameters": {
@@ -11928,7 +11957,7 @@
             "I1": [ 131 ]
           }
         },
-        "timer_SB_CARRY_I1_29": {
+        "timer_SB_CARRY_I1_28": {
           "hide_name": 0,
           "type": "SB_CARRY",
           "parameters": {
@@ -11949,7 +11978,7 @@
             "I1": [ 133 ]
           }
         },
-        "timer_SB_CARRY_I1_3": {
+        "timer_SB_CARRY_I1_29": {
           "hide_name": 0,
           "type": "SB_CARRY",
           "parameters": {
@@ -11965,9 +11994,30 @@
           },
           "connections": {
             "CI": [ 134 ],
-            "CO": [ 112 ],
+            "CO": [ 132 ],
             "I0": [ "0" ],
             "I1": [ 135 ]
+          }
+        },
+        "timer_SB_CARRY_I1_3": {
+          "hide_name": 0,
+          "type": "SB_CARRY",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "toplevel.v:16.33-16.42|/home/awood/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "I0": "input",
+            "I1": "input"
+          },
+          "connections": {
+            "CI": [ 136 ],
+            "CO": [ 114 ],
+            "I0": [ "0" ],
+            "I1": [ 137 ]
           }
         },
         "timer_SB_CARRY_I1_30": {
@@ -11985,34 +12035,13 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 136 ],
-            "CO": [ 132 ],
-            "I0": [ "0" ],
-            "I1": [ 137 ]
-          }
-        },
-        "timer_SB_CARRY_I1_31": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "toplevel.v:16.33-16.42|/home/awood/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
             "CI": [ 138 ],
-            "CO": [ 136 ],
+            "CO": [ 134 ],
             "I0": [ "0" ],
             "I1": [ 139 ]
           }
         },
-        "timer_SB_CARRY_I1_32": {
+        "timer_SB_CARRY_I1_31": {
           "hide_name": 0,
           "type": "SB_CARRY",
           "parameters": {
@@ -12033,6 +12062,27 @@
             "I1": [ 141 ]
           }
         },
+        "timer_SB_CARRY_I1_32": {
+          "hide_name": 0,
+          "type": "SB_CARRY",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "toplevel.v:16.33-16.42|/home/awood/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "I0": "input",
+            "I1": "input"
+          },
+          "connections": {
+            "CI": [ 142 ],
+            "CO": [ 140 ],
+            "I0": [ "0" ],
+            "I1": [ 143 ]
+          }
+        },
         "timer_SB_CARRY_I1_33": {
           "hide_name": 0,
           "type": "SB_CARRY",
@@ -12048,10 +12098,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 95 ],
-            "CO": [ 140 ],
+            "CI": [ 97 ],
+            "CO": [ 142 ],
             "I0": [ "0" ],
-            "I1": [ 142 ]
+            "I1": [ 144 ]
           }
         },
         "timer_SB_CARRY_I1_4": {
@@ -12069,10 +12119,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 143 ],
-            "CO": [ 134 ],
+            "CI": [ 145 ],
+            "CO": [ 136 ],
             "I0": [ "0" ],
-            "I1": [ 144 ]
+            "I1": [ 146 ]
           }
         },
         "timer_SB_CARRY_I1_5": {
@@ -12090,10 +12140,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 145 ],
-            "CO": [ 143 ],
+            "CI": [ 147 ],
+            "CO": [ 145 ],
             "I0": [ "0" ],
-            "I1": [ 146 ]
+            "I1": [ 148 ]
           }
         },
         "timer_SB_CARRY_I1_6": {
@@ -12111,10 +12161,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 103 ],
-            "CO": [ 145 ],
+            "CI": [ 105 ],
+            "CO": [ 147 ],
             "I0": [ "0" ],
-            "I1": [ 147 ]
+            "I1": [ 149 ]
           }
         },
         "timer_SB_CARRY_I1_7": {
@@ -12132,10 +12182,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 148 ],
-            "CO": [ 149 ],
+            "CI": [ 150 ],
+            "CO": [ 151 ],
             "I0": [ "0" ],
-            "I1": [ 33 ]
+            "I1": [ 24 ]
           }
         },
         "timer_SB_CARRY_I1_8": {
@@ -12153,10 +12203,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 150 ],
-            "CO": [ 148 ],
+            "CI": [ 152 ],
+            "CO": [ 150 ],
             "I0": [ "0" ],
-            "I1": [ 35 ]
+            "I1": [ 30 ]
           }
         },
         "timer_SB_CARRY_I1_9": {
@@ -12174,10 +12224,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 100 ],
-            "CO": [ 150 ],
+            "CI": [ 102 ],
+            "CO": [ 152 ],
             "I0": [ "0" ],
-            "I1": [ 37 ]
+            "I1": [ 35 ]
           }
         },
         "timer_SB_DFF_Q": {
@@ -12196,8 +12246,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 151 ],
-            "Q": [ 31 ]
+            "D": [ 153 ],
+            "Q": [ 20 ]
           }
         },
         "timer_SB_DFF_Q_1": {
@@ -12216,8 +12266,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 152 ],
-            "Q": [ 33 ]
+            "D": [ 154 ],
+            "Q": [ 24 ]
           }
         },
         "timer_SB_DFF_Q_10": {
@@ -12236,8 +12286,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 153 ],
-            "Q": [ 24 ]
+            "D": [ 155 ],
+            "Q": [ 34 ]
           }
         },
         "timer_SB_DFF_Q_11": {
@@ -12256,8 +12306,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 154 ],
-            "Q": [ 27 ]
+            "D": [ 156 ],
+            "Q": [ 40 ]
           }
         },
         "timer_SB_DFF_Q_12": {
@@ -12276,8 +12326,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 155 ],
-            "Q": [ 111 ]
+            "D": [ 157 ],
+            "Q": [ 113 ]
           }
         },
         "timer_SB_DFF_Q_13": {
@@ -12296,8 +12346,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 156 ],
-            "Q": [ 115 ]
+            "D": [ 158 ],
+            "Q": [ 117 ]
           }
         },
         "timer_SB_DFF_Q_14": {
@@ -12316,8 +12366,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 157 ],
-            "Q": [ 117 ]
+            "D": [ 159 ],
+            "Q": [ 119 ]
           }
         },
         "timer_SB_DFF_Q_15": {
@@ -12336,8 +12386,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 158 ],
-            "Q": [ 119 ]
+            "D": [ 160 ],
+            "Q": [ 121 ]
           }
         },
         "timer_SB_DFF_Q_16": {
@@ -12356,8 +12406,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 159 ],
-            "Q": [ 121 ]
+            "D": [ 161 ],
+            "Q": [ 123 ]
           }
         },
         "timer_SB_DFF_Q_17": {
@@ -12376,8 +12426,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 160 ],
-            "Q": [ 123 ]
+            "D": [ 162 ],
+            "Q": [ 125 ]
           }
         },
         "timer_SB_DFF_Q_18": {
@@ -12396,51 +12446,11 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 161 ],
-            "Q": [ 125 ]
-          }
-        },
-        "timer_SB_DFF_Q_19": {
-          "hide_name": 0,
-          "type": "SB_DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "toplevel.v:16.2-16.43|/home/awood/oss-cad-suite/lib/../share/yosys/ice40/ff_map.v:2.51-2.90"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "C": [ 2 ],
-            "D": [ 162 ],
+            "D": [ 163 ],
             "Q": [ 127 ]
           }
         },
-        "timer_SB_DFF_Q_2": {
-          "hide_name": 0,
-          "type": "SB_DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "toplevel.v:16.2-16.43|/home/awood/oss-cad-suite/lib/../share/yosys/ice40/ff_map.v:2.51-2.90"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "C": [ 2 ],
-            "D": [ 163 ],
-            "Q": [ 35 ]
-          }
-        },
-        "timer_SB_DFF_Q_20": {
+        "timer_SB_DFF_Q_19": {
           "hide_name": 0,
           "type": "SB_DFF",
           "parameters": {
@@ -12460,7 +12470,7 @@
             "Q": [ 129 ]
           }
         },
-        "timer_SB_DFF_Q_21": {
+        "timer_SB_DFF_Q_2": {
           "hide_name": 0,
           "type": "SB_DFF",
           "parameters": {
@@ -12477,7 +12487,47 @@
           "connections": {
             "C": [ 2 ],
             "D": [ 165 ],
+            "Q": [ 30 ]
+          }
+        },
+        "timer_SB_DFF_Q_20": {
+          "hide_name": 0,
+          "type": "SB_DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "toplevel.v:16.2-16.43|/home/awood/oss-cad-suite/lib/../share/yosys/ice40/ff_map.v:2.51-2.90"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 166 ],
             "Q": [ 131 ]
+          }
+        },
+        "timer_SB_DFF_Q_21": {
+          "hide_name": 0,
+          "type": "SB_DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "toplevel.v:16.2-16.43|/home/awood/oss-cad-suite/lib/../share/yosys/ice40/ff_map.v:2.51-2.90"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 167 ],
+            "Q": [ 133 ]
           }
         },
         "timer_SB_DFF_Q_22": {
@@ -12496,8 +12546,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 166 ],
-            "Q": [ 133 ]
+            "D": [ 168 ],
+            "Q": [ 135 ]
           }
         },
         "timer_SB_DFF_Q_23": {
@@ -12516,8 +12566,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 167 ],
-            "Q": [ 137 ]
+            "D": [ 169 ],
+            "Q": [ 139 ]
           }
         },
         "timer_SB_DFF_Q_24": {
@@ -12536,8 +12586,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 168 ],
-            "Q": [ 139 ]
+            "D": [ 170 ],
+            "Q": [ 141 ]
           }
         },
         "timer_SB_DFF_Q_25": {
@@ -12556,8 +12606,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 169 ],
-            "Q": [ 141 ]
+            "D": [ 171 ],
+            "Q": [ 143 ]
           }
         },
         "timer_SB_DFF_Q_26": {
@@ -12576,8 +12626,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 170 ],
-            "Q": [ 142 ]
+            "D": [ 172 ],
+            "Q": [ 144 ]
           }
         },
         "timer_SB_DFF_Q_27": {
@@ -12596,8 +12646,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 171 ],
-            "Q": [ 96 ]
+            "D": [ 173 ],
+            "Q": [ 98 ]
           }
         },
         "timer_SB_DFF_Q_28": {
@@ -12616,8 +12666,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 172 ],
-            "Q": [ 98 ]
+            "D": [ 174 ],
+            "Q": [ 100 ]
           }
         },
         "timer_SB_DFF_Q_29": {
@@ -12636,8 +12686,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 173 ],
-            "Q": [ 113 ]
+            "D": [ 175 ],
+            "Q": [ 115 ]
           }
         },
         "timer_SB_DFF_Q_3": {
@@ -12656,8 +12706,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 174 ],
-            "Q": [ 37 ]
+            "D": [ 176 ],
+            "Q": [ 35 ]
           }
         },
         "timer_SB_DFF_Q_30": {
@@ -12676,8 +12726,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 175 ],
-            "Q": [ 135 ]
+            "D": [ 177 ],
+            "Q": [ 137 ]
           }
         },
         "timer_SB_DFF_Q_31": {
@@ -12696,8 +12746,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 176 ],
-            "Q": [ 144 ]
+            "D": [ 178 ],
+            "Q": [ 146 ]
           }
         },
         "timer_SB_DFF_Q_32": {
@@ -12716,8 +12766,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 177 ],
-            "Q": [ 146 ]
+            "D": [ 179 ],
+            "Q": [ 148 ]
           }
         },
         "timer_SB_DFF_Q_33": {
@@ -12736,8 +12786,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 178 ],
-            "Q": [ 147 ]
+            "D": [ 180 ],
+            "Q": [ 149 ]
           }
         },
         "timer_SB_DFF_Q_34": {
@@ -12756,8 +12806,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 179 ],
-            "Q": [ 104 ]
+            "D": [ 181 ],
+            "Q": [ 106 ]
           }
         },
         "timer_SB_DFF_Q_35": {
@@ -12776,8 +12826,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 180 ],
-            "Q": [ 93 ]
+            "D": [ 182 ],
+            "Q": [ 95 ]
           }
         },
         "timer_SB_DFF_Q_36": {
@@ -12796,8 +12846,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 181 ],
-            "Q": [ 91 ]
+            "D": [ 183 ],
+            "Q": [ 93 ]
           }
         },
         "timer_SB_DFF_Q_4": {
@@ -12816,8 +12866,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 182 ],
-            "Q": [ 32 ]
+            "D": [ 184 ],
+            "Q": [ 22 ]
           }
         },
         "timer_SB_DFF_Q_5": {
@@ -12836,8 +12886,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 183 ],
-            "Q": [ 34 ]
+            "D": [ 185 ],
+            "Q": [ 26 ]
           }
         },
         "timer_SB_DFF_Q_6": {
@@ -12856,8 +12906,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 184 ],
-            "Q": [ 36 ]
+            "D": [ 186 ],
+            "Q": [ 32 ]
           }
         },
         "timer_SB_DFF_Q_7": {
@@ -12876,8 +12926,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 185 ],
-            "Q": [ 38 ]
+            "D": [ 187 ],
+            "Q": [ 37 ]
           }
         },
         "timer_SB_DFF_Q_8": {
@@ -12896,8 +12946,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 186 ],
-            "Q": [ 17 ]
+            "D": [ 188 ],
+            "Q": [ 39 ]
           }
         },
         "timer_SB_DFF_Q_9": {
@@ -12916,8 +12966,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 187 ],
-            "Q": [ 21 ]
+            "D": [ 189 ],
+            "Q": [ 28 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O": {
@@ -12940,9 +12990,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 96 ],
-            "I3": [ 94 ],
-            "O": [ 171 ]
+            "I2": [ 98 ],
+            "I3": [ 96 ],
+            "O": [ 173 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_1": {
@@ -12965,9 +13015,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 98 ],
-            "I3": [ 97 ],
-            "O": [ 172 ]
+            "I2": [ 100 ],
+            "I3": [ 99 ],
+            "O": [ 174 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_10": {
@@ -12990,9 +13040,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 37 ],
-            "I3": [ 100 ],
-            "O": [ 174 ]
+            "I2": [ 35 ],
+            "I3": [ 102 ],
+            "O": [ 176 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_11": {
@@ -13015,9 +13065,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 32 ],
-            "I3": [ 99 ],
-            "O": [ 182 ]
+            "I2": [ 22 ],
+            "I3": [ 101 ],
+            "O": [ 184 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_12": {
@@ -13040,9 +13090,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 34 ],
-            "I3": [ 101 ],
-            "O": [ 183 ]
+            "I2": [ 26 ],
+            "I3": [ 103 ],
+            "O": [ 185 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_13": {
@@ -13065,9 +13115,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 36 ],
-            "I3": [ 102 ],
-            "O": [ 184 ]
+            "I2": [ 32 ],
+            "I3": [ 104 ],
+            "O": [ 186 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_14": {
@@ -13090,9 +13140,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 104 ],
-            "I3": [ 92 ],
-            "O": [ 179 ]
+            "I2": [ 106 ],
+            "I3": [ 94 ],
+            "O": [ 181 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_15": {
@@ -13115,9 +13165,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 38 ],
-            "I3": [ 105 ],
-            "O": [ 185 ]
+            "I2": [ 37 ],
+            "I3": [ 107 ],
+            "O": [ 187 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_16": {
@@ -13140,9 +13190,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 17 ],
-            "I3": [ 106 ],
-            "O": [ 186 ]
+            "I2": [ 39 ],
+            "I3": [ 108 ],
+            "O": [ 188 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_17": {
@@ -13165,9 +13215,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 21 ],
-            "I3": [ 107 ],
-            "O": [ 187 ]
+            "I2": [ 28 ],
+            "I3": [ 109 ],
+            "O": [ 189 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_18": {
@@ -13190,9 +13240,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 24 ],
-            "I3": [ 108 ],
-            "O": [ 153 ]
+            "I2": [ 34 ],
+            "I3": [ 110 ],
+            "O": [ 155 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_19": {
@@ -13215,9 +13265,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 27 ],
-            "I3": [ 109 ],
-            "O": [ 154 ]
+            "I2": [ 40 ],
+            "I3": [ 111 ],
+            "O": [ 156 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_2": {
@@ -13240,9 +13290,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 113 ],
-            "I3": [ 112 ],
-            "O": [ 173 ]
+            "I2": [ 115 ],
+            "I3": [ 114 ],
+            "O": [ 175 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_20": {
@@ -13265,9 +13315,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 111 ],
-            "I3": [ 110 ],
-            "O": [ 155 ]
+            "I2": [ 113 ],
+            "I3": [ 112 ],
+            "O": [ 157 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_21": {
@@ -13290,9 +13340,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 115 ],
-            "I3": [ 114 ],
-            "O": [ 156 ]
+            "I2": [ 117 ],
+            "I3": [ 116 ],
+            "O": [ 158 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_22": {
@@ -13315,9 +13365,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 117 ],
-            "I3": [ 116 ],
-            "O": [ 157 ]
+            "I2": [ 119 ],
+            "I3": [ 118 ],
+            "O": [ 159 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_23": {
@@ -13340,9 +13390,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 119 ],
-            "I3": [ 118 ],
-            "O": [ 158 ]
+            "I2": [ 121 ],
+            "I3": [ 120 ],
+            "O": [ 160 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_24": {
@@ -13365,9 +13415,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 121 ],
-            "I3": [ 120 ],
-            "O": [ 159 ]
+            "I2": [ 123 ],
+            "I3": [ 122 ],
+            "O": [ 161 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_25": {
@@ -13390,9 +13440,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 93 ],
-            "I3": [ 91 ],
-            "O": [ 180 ]
+            "I2": [ 95 ],
+            "I3": [ 93 ],
+            "O": [ 182 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_26": {
@@ -13415,9 +13465,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 123 ],
-            "I3": [ 122 ],
-            "O": [ 160 ]
+            "I2": [ 125 ],
+            "I3": [ 124 ],
+            "O": [ 162 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_27": {
@@ -13440,37 +13490,12 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 125 ],
-            "I3": [ 124 ],
-            "O": [ 161 ]
+            "I2": [ 127 ],
+            "I3": [ 126 ],
+            "O": [ 163 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_28": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "toplevel.v:16.33-16.42|/home/awood/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/awood/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 127 ],
-            "I3": [ 126 ],
-            "O": [ 162 ]
-          }
-        },
-        "timer_SB_DFF_Q_D_SB_LUT4_O_29": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -13495,6 +13520,31 @@
             "O": [ 164 ]
           }
         },
+        "timer_SB_DFF_Q_D_SB_LUT4_O_29": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0110100110010110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "toplevel.v:16.33-16.42|/home/awood/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4|/home/awood/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 131 ],
+            "I3": [ 130 ],
+            "O": [ 166 ]
+          }
+        },
         "timer_SB_DFF_Q_D_SB_LUT4_O_3": {
           "hide_name": 0,
           "type": "SB_LUT4",
@@ -13515,9 +13565,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 135 ],
-            "I3": [ 134 ],
-            "O": [ 175 ]
+            "I2": [ 137 ],
+            "I3": [ 136 ],
+            "O": [ 177 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_30": {
@@ -13540,9 +13590,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 131 ],
-            "I3": [ 130 ],
-            "O": [ 165 ]
+            "I2": [ 133 ],
+            "I3": [ 132 ],
+            "O": [ 167 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_31": {
@@ -13565,9 +13615,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 133 ],
-            "I3": [ 132 ],
-            "O": [ 166 ]
+            "I2": [ 135 ],
+            "I3": [ 134 ],
+            "O": [ 168 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_32": {
@@ -13590,9 +13640,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 137 ],
-            "I3": [ 136 ],
-            "O": [ 167 ]
+            "I2": [ 139 ],
+            "I3": [ 138 ],
+            "O": [ 169 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_33": {
@@ -13615,9 +13665,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 139 ],
-            "I3": [ 138 ],
-            "O": [ 168 ]
+            "I2": [ 141 ],
+            "I3": [ 140 ],
+            "O": [ 170 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_34": {
@@ -13640,9 +13690,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 141 ],
-            "I3": [ 140 ],
-            "O": [ 169 ]
+            "I2": [ 143 ],
+            "I3": [ 142 ],
+            "O": [ 171 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_35": {
@@ -13665,9 +13715,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 142 ],
-            "I3": [ 95 ],
-            "O": [ 170 ]
+            "I2": [ 144 ],
+            "I3": [ 97 ],
+            "O": [ 172 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_36": {
@@ -13691,8 +13741,8 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 91 ],
-            "O": [ 181 ]
+            "I3": [ 93 ],
+            "O": [ 183 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_4": {
@@ -13715,9 +13765,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 144 ],
-            "I3": [ 143 ],
-            "O": [ 176 ]
+            "I2": [ 146 ],
+            "I3": [ 145 ],
+            "O": [ 178 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_5": {
@@ -13740,9 +13790,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 146 ],
-            "I3": [ 145 ],
-            "O": [ 177 ]
+            "I2": [ 148 ],
+            "I3": [ 147 ],
+            "O": [ 179 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_6": {
@@ -13765,9 +13815,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 147 ],
-            "I3": [ 103 ],
-            "O": [ 178 ]
+            "I2": [ 149 ],
+            "I3": [ 105 ],
+            "O": [ 180 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_7": {
@@ -13790,9 +13840,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 31 ],
-            "I3": [ 149 ],
-            "O": [ 151 ]
+            "I2": [ 20 ],
+            "I3": [ 151 ],
+            "O": [ 153 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_8": {
@@ -13815,9 +13865,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 33 ],
-            "I3": [ 148 ],
-            "O": [ 152 ]
+            "I2": [ 24 ],
+            "I3": [ 150 ],
+            "O": [ 154 ]
           }
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_9": {
@@ -13840,9 +13890,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 35 ],
-            "I3": [ 150 ],
-            "O": [ 163 ]
+            "I2": [ 30 ],
+            "I3": [ 152 ],
+            "O": [ 165 ]
           }
         }
       },
@@ -13854,14 +13904,6 @@
             "src": "toplevel.v:12.8-12.9"
           }
         },
-        "a_SB_LUT4_O_I0": {
-          "hide_name": 0,
-          "bits": [ 11, 14, 12, 13 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/home/awood/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
         "b": {
           "hide_name": 0,
           "bits": [ 10 ],
@@ -13871,7 +13913,7 @@
         },
         "c": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 12 ],
           "attributes": {
             "src": "toplevel.v:12.12-12.13"
           }
@@ -13892,14 +13934,14 @@
         },
         "d": {
           "hide_name": 0,
-          "bits": [ "x" ],
+          "bits": [ 11 ],
           "attributes": {
             "src": "toplevel.v:12.14-12.15"
           }
         },
         "dig": {
           "hide_name": 0,
-          "bits": [ 188, 189, 190, 191 ],
+          "bits": [ 190, 191, 192, 193 ],
           "attributes": {
             "src": "toplevel.v:18.13-18.16",
             "unused_bits": "0 1 2 3"
@@ -13928,7 +13970,7 @@
         },
         "hex.hex": {
           "hide_name": 0,
-          "bits": [ 188, 189, 190, 191 ],
+          "bits": [ 190, 191, 192, 193 ],
           "attributes": {
             "hdlname": "hex hex",
             "src": "toplevel.v:20.9-23.3|hex27seg.v:28.22-28.25",
@@ -13937,7 +13979,7 @@
         },
         "hex.s7": {
           "hide_name": 0,
-          "bits": [ 8, 10, "x", "x", 9, 7, 6 ],
+          "bits": [ 8, 10, 12, 11, 9, 7, 6 ],
           "attributes": {
             "hdlname": "hex s7",
             "src": "toplevel.v:20.9-23.3|hex27seg.v:29.22-29.24"
@@ -13951,17 +13993,17 @@
             "src": "toplevel.v:25.20-28.3|7seg_display.v:28.19-28.21"
           }
         },
-        "seg7.ca_SB_LUT4_I2_5_O": {
+        "seg7.ca_SB_LUT4_I2_3_O": {
           "hide_name": 0,
-          "bits": [ 22, 23, 24, 18 ],
+          "bits": [ 27, 25, 28, 29 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/home/awood/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
           }
         },
-        "seg7.ca_SB_LUT4_I2_7_O": {
+        "seg7.ca_SB_LUT4_I2_5_O": {
           "hide_name": 0,
-          "bits": [ 25, 26, 27, 18 ],
+          "bits": [ 33, 31, 34, 29 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/home/awood/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
@@ -13969,7 +14011,7 @@
         },
         "seg7.ca_SB_LUT4_I2_8_O": {
           "hide_name": 0,
-          "bits": [ 19, 20, 21, 18 ],
+          "bits": [ 38, 36, 40, 29 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/home/awood/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
@@ -13977,7 +14019,15 @@
         },
         "seg7.ca_SB_LUT4_I2_O": {
           "hide_name": 0,
-          "bits": [ 15, 16, 17, 18 ],
+          "bits": [ 23, 21, 39, 29 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/awood/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "seg7.ca_SB_LUT4_I2_O_SB_LUT4_I0_O": {
+          "hide_name": 0,
+          "bits": [ 13, 16, 14, 15 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/home/awood/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
@@ -13985,7 +14035,7 @@
         },
         "seg7.ca_SB_LUT4_I3_O": {
           "hide_name": 0,
-          "bits": [ 39 ],
+          "bits": [ 41 ],
           "attributes": {
           }
         },
@@ -13999,7 +14049,7 @@
         },
         "seg7.count": {
           "hide_name": 0,
-          "bits": [ 40, 42, 68, 67, 65, 63, 61, 59, 47, 45, 57, 56, 54, 52, 50, 72, 71, 28 ],
+          "bits": [ 42, 44, 70, 69, 67, 65, 63, 61, 49, 47, 59, 58, 56, 54, 52, 74, 73, 17 ],
           "attributes": {
             "hdlname": "seg7 count",
             "src": "toplevel.v:25.20-28.3|7seg_display.v:35.13-35.18"
@@ -14007,7 +14057,7 @@
         },
         "seg7.count_SB_DFFSR_Q_D": {
           "hide_name": 0,
-          "bits": [ 82, 81, 80, 79, 78, 77, 76, 75, 90, 89, 88, 87, 86, 85, 84, 83, 74, 73 ],
+          "bits": [ 84, 83, 82, 81, 80, 79, 78, 77, 92, 91, 90, 89, 88, 87, 86, 85, 76, 75 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "toplevel.v:25.20-28.3|7seg_display.v:38.15-38.24|/home/awood/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:33.26-33.27"
@@ -14015,7 +14065,7 @@
         },
         "seg7.count_SB_DFFSR_Q_D_SB_LUT4_O_I3": {
           "hide_name": 0,
-          "bits": [ "0", 40, 41, 66, 64, 62, 60, 58, 46, 43, 44, 55, 53, 51, 48, 49, 69, 70 ],
+          "bits": [ "0", 42, 43, 68, 66, 64, 62, 60, 48, 45, 46, 57, 55, 53, 50, 51, 71, 72 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "toplevel.v:25.20-28.3|7seg_display.v:38.15-38.24|/home/awood/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:51.21-51.22"
@@ -14023,14 +14073,14 @@
         },
         "tile3": {
           "hide_name": 0,
-          "bits": [ 3, 4, 5, 6, 7, 8, 9, 10, "1", "0", "0", "0" ],
+          "bits": [ 3, 4, 5, 6, 7, 8, 9, 10, "1", 11, "1", 12 ],
           "attributes": {
             "src": "toplevel.v:5.17-5.22"
           }
         },
         "tile3_SB_LUT4_O_I3": {
           "hide_name": 0,
-          "bits": [ 29, 30, 3, 35 ],
+          "bits": [ 18, 19, 3, 35 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/home/awood/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
@@ -14038,14 +14088,14 @@
         },
         "timer": {
           "hide_name": 0,
-          "bits": [ 91, 93, 104, 147, 146, 144, 135, 113, 98, 96, 142, 141, 139, 137, 133, 131, 129, 127, 125, 123, 121, 119, 117, 115, 111, 27, 24, 21, 17, 38, 36, 34, 32, 37, 35, 33, 31 ],
+          "bits": [ 93, 95, 106, 149, 148, 146, 137, 115, 100, 98, 144, 143, 141, 139, 135, 133, 131, 129, 127, 125, 123, 121, 119, 117, 113, 40, 34, 28, 39, 37, 32, 26, 22, 35, 30, 24, 20 ],
           "attributes": {
             "src": "toplevel.v:8.13-8.18"
           }
         },
         "timer_SB_DFF_Q_D": {
           "hide_name": 0,
-          "bits": [ 181, 180, 179, 178, 177, 176, 175, 173, 172, 171, 170, 169, 168, 167, 166, 165, 164, 162, 161, 160, 159, 158, 157, 156, 155, 154, 153, 187, 186, 185, 184, 183, 182, 174, 163, 152, 151 ],
+          "bits": [ 183, 182, 181, 180, 179, 178, 177, 175, 174, 173, 172, 171, 170, 169, 168, 167, 166, 164, 163, 162, 161, 160, 159, 158, 157, 156, 155, 189, 188, 187, 186, 185, 184, 176, 165, 154, 153 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "toplevel.v:16.33-16.42|/home/awood/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:33.26-33.27"
@@ -14053,7 +14103,7 @@
         },
         "timer_SB_DFF_Q_D_SB_LUT4_O_I3": {
           "hide_name": 0,
-          "bits": [ "0", 91, 92, 103, 145, 143, 134, 112, 97, 94, 95, 140, 138, 136, 132, 130, 128, 126, 124, 122, 120, 118, 116, 114, 110, 109, 108, 107, 106, 105, 102, 101, 99, 100, 150, 148, 149 ],
+          "bits": [ "0", 93, 94, 105, 147, 145, 136, 114, 99, 96, 97, 142, 140, 138, 134, 132, 130, 128, 126, 124, 122, 120, 118, 116, 112, 111, 110, 109, 108, 107, 104, 103, 101, 102, 152, 150, 151 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "toplevel.v:16.33-16.42|/home/awood/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:51.21-51.22"
@@ -14061,7 +14111,7 @@
         },
         "val": {
           "hide_name": 0,
-          "bits": [ 27, 24, 21, 17, 38, 36, 34, 32, 37, 35, 33, 31 ],
+          "bits": [ 40, 34, 28, 39, 37, 32, 26, 22, 35, 30, 24, 20 ],
           "attributes": {
             "src": "toplevel.v:10.14-10.17"
           }
