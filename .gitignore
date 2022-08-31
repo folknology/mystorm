@@ -160,3 +160,9 @@ cython_debug/
 #.idea/
 
 .vscode/
+
+# Verilog build artifacts
+*/bin/*.asc
+*/bin/*.json
+*/bin/*.bin
+

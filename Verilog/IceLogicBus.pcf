@@ -6,7 +6,7 @@
 # Blade 1 |                                     | Blade 2
 #         |                                     |
 #         |                                     |
-# USB     |            BlackiceNxt              | Blade 2
+# USB-C   |            BlackiceNxt              | Blade 2
 #         |                                     |
 #         |                                     |
 # SD/MMC  |                                     | Blade 3
@@ -119,23 +119,23 @@ set_io -nowarn  blade4[5] A10
 #set_io -nowarn  ds0 K6
 
 # HyperRam/Flash
-set_io --warn-no-port hram_dq[0] K3
-set_io --warn-no-port hram_dq[1] K4
-set_io --warn-no-port hram_dq[2] L1
-set_io --warn-no-port hram_dq[3] K5
-set_io --warn-no-port hram_dq[4] J3
-set_io --warn-no-port hram_dq[5] L3
-set_io --warn-no-port hram_dq[6] L4
-set_io --warn-no-port hram_dq[7] J5
+set_io -nowarn hram_dq[0] K3
+set_io -nowarn hram_dq[1] K4
+set_io -nowarn hram_dq[2] L1
+set_io -nowarn hram_dq[3] K5
+set_io -nowarn hram_dq[4] J3
+set_io -nowarn hram_dq[5] L3
+set_io -nowarn hram_dq[6] L4
+set_io -nowarn hram_dq[7] J5
 
-set_io --warn-no-port hram_rwds J4
-set_io --warn-no-port hram_ck L2
+set_io -nowarn hram_rwds J4
+set_io -nowarn hram_ck L2
 
-set_io --warn-no-port hram_cs_n[0] J2 # HyperRam
-set_io --warn-no-port hram_cs_n[1] K2 # HyperFlash
-set_io --warn-no-port hflsh_int_n H9 # HyperFlash
+set_io -nowarn hram_cs_n[0] J2 # HyperRam
+set_io -nowarn hram_cs_n[1] K2 # HyperFlash
+set_io -nowarn hflsh_int_n H9 # HyperFlash
 
-#set_io --warn-no-port hram_rst_n handled by STM32 when programming Ice40
+#set_io -nowarn hram_rst_n handled by STM32 when programming Ice40
 
 # QsPie
 set_io -nowarn  qd[0] J9
@@ -160,14 +160,53 @@ set_io -nowarn  ss L7
 set_io -nowarn  led J11
 # Mezzanine
 
-#Double PMOD Tile pinouts
+#Double PMOD Tile pinouts position 1
+
+#PMOD1A
+set_io -nowarn  pm1a[0] F1
+set_io -nowarn  pm1a[1] F4
+set_io -nowarn  pm1a[2] G1
+set_io -nowarn  pm1a[3] G3
+
+#PMOD1B
+set_io -nowarn  pm1b[0] F2
+set_io -nowarn  pm1b[1] F3
+set_io -nowarn  pm1b[2] G2
+set_io -nowarn  pm1b[3] H3
+
+#PMOD2A
+set_io -nowarn  pm2a[0] H1
+set_io -nowarn  pm2a[1] J1
+set_io -nowarn  pm2a[2] B1
+set_io -nowarn  pm2a[3] C4
+
+#PMOD2B
+set_io -nowarn  pm2b[0] H2
+set_io -nowarn  pm2b[1] K1
+set_io -nowarn  pm2b[2] B2 
+set_io -nowarn  pm2b[3] C3
+
+#PMOD3A
+set_io -nowarn  pm3a[0] C2
+set_io -nowarn  pm3a[1] E1 
+set_io -nowarn  pm3a[2] D2
+set_io -nowarn  pm3a[3] E2
+
+#PMOD3B
+set_io -nowarn  pm3b[0] C1
+set_io -nowarn  pm3b[1] D1
+set_io -nowarn  pm3b[2] D3
+set_io -nowarn  pm3b[3] E3
+
+#Double PMOD Tile pinouts position 2
 #PMOD4A
 set_io -nowarn  pm4a[0] A9
 set_io -nowarn  pm4a[1] A8
 set_io -nowarn  pm4a[2] A6
 set_io -nowarn  pm4a[3] A2
 
-#PMODs
+#PMOD4B
+set_io -nowarn  pm4b[0] C8
 set_io -nowarn  pm4b[1] C7
 set_io -nowarn  pm4b[2] A5
 set_io -nowarn  pm4b[3] A3
