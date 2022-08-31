@@ -162,7 +162,8 @@ cython_debug/
 .vscode/
 
 # Verilog build artifacts
-*/bin/*.asc
-*/bin/*.json
-*/bin/*.bin
+bin/
+# */bin/*.asc
+# */bin/*.json
+# */bin/*.bin
 
