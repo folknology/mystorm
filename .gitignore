@@ -163,7 +163,5 @@ cython_debug/
 
 # Verilog build artifacts
 bin/
-# */bin/*.asc
-# */bin/*.json
-# */bin/*.bin
+
 

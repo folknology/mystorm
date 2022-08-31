@@ -1,3 +1,27 @@
+#     BirdsEye Board view from the top looking down
+#
+#            Pmod1,2                   Pmod3 
+#         *-------------------------------------*
+#         |  Tile 1                    Tile 3   |
+#         |                                     |
+# Blade 1 |                                     | Blade 2
+#         |                                     |
+#         \                                     |
+#  USB-C  |            BlackiceNxt              | Blade 3
+#         /                                     |
+#         |                                     |
+# SD/MMC  |                                     | Blade 4
+#         |                                     |
+#         |  Tile 2                    Tile 4   |
+#         *-------------------------------------*
+#            Pmod6                    Pmod5,4
+#
+#    Pmod pin orders looking into the Pmod connectors
+#    ___________          ___________ _____ ___________
+#  A|+.-.3.2.1.0|       A|+.-.3.2.1.0|x.x.x|+.-.3.2.1.0|
+#  B|+.-.3.2.1.0|       B|+.-.3.2.1.0|x.x.x|+.-.3.2.1.0|
+#    -----------          ----------- ----- -----------
+
 import os
 import subprocess
 import serial
@@ -9,21 +33,6 @@ from amaranth.vendor.lattice_ice40 import LatticeICE40Platform
 
 __all__ = ["IceLogicBusPlatform"]
 
-#            Tile 1                    Tile 3
-#         *-------------------------------------*
-#         |                                     |
-#         |                                     |
-# Blade 1 |                                     | Blade 2
-#         |                                     |
-#         |                                     |
-# USB     |            BlackiceNxt              | Blade 2
-#         |                                     |
-#         |                                     |
-# SD/MMC  |                                     | Blade 3
-#         |                                     |
-#         |                                     |
-#         *-------------------------------------*
-#            Tile 2                    Tile 4
 
 class PortNotFound(Exception):
     pass

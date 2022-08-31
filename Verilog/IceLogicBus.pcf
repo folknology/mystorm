@@ -1,19 +1,26 @@
-
-#            Tile 1                    Tile 3
+#     BirdsEye Board view from the top looking down
+#
+#            Pmod1,2                   Pmod3 
 #         *-------------------------------------*
-#         |                                     |
+#         |  Tile 1                    Tile 3   |
 #         |                                     |
 # Blade 1 |                                     | Blade 2
 #         |                                     |
+#         \                                     |
+#  USB-C  |            BlackiceNxt              | Blade 3
+#         /                                     |
 #         |                                     |
-# USB-C   |            BlackiceNxt              | Blade 2
+# SD/MMC  |                                     | Blade 4
 #         |                                     |
-#         |                                     |
-# SD/MMC  |                                     | Blade 3
-#         |                                     |
-#         |                                     |
+#         |  Tile 2                    Tile 4   |
 #         *-------------------------------------*
-#            Tile 2                    Tile 4
+#            Pmod6                    Pmod5,4
+#
+#    Pmod pin orders looking into the Pmod connectors
+#    ___________          ___________ _____ ___________
+#  A|+.-.3.2.1.0|       A|+.-.3.2.1.0|x.x.x|+.-.3.2.1.0|
+#  B|+.-.3.2.1.0|       B|+.-.3.2.1.0|x.x.x|+.-.3.2.1.0|
+#    -----------          ----------- ----- -----------
 
 set_io clk B7
 
@@ -160,7 +167,7 @@ set_io -nowarn  ss L7
 set_io -nowarn  led J11
 # Mezzanine
 
-#Double PMOD Tile pinouts position 1
+#PMOD Double Tile pinouts position 1
 
 #PMOD1A
 set_io -nowarn  pm1a[0] F1
@@ -198,7 +205,8 @@ set_io -nowarn  pm3b[1] D1
 set_io -nowarn  pm3b[2] D3
 set_io -nowarn  pm3b[3] E3
 
-#Double PMOD Tile pinouts position 2
+#PMOD Double Tile pinouts position 2
+
 #PMOD4A
 set_io -nowarn  pm4a[0] A9
 set_io -nowarn  pm4a[1] A8
